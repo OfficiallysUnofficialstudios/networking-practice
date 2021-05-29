@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GunPong",
+			"Path": "C:\\Users\\Jerry\\Documents\\Unreal Projects\\GunPong\\Source\\GunPong.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GunPongEditor",
+			"Path": "C:\\Users\\Jerry\\Documents\\Unreal Projects\\GunPong\\Source\\GunPongEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
