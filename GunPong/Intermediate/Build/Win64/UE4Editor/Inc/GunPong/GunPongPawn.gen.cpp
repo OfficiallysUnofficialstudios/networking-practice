@@ -19,7 +19,6 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 	UPackage* Z_Construct_UPackage__Script_GunPong();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	GUNPONG_API UClass* Z_Construct_UClass_AGunPongProjectile_NoRegister();
@@ -154,10 +153,6 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoveSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
@@ -218,17 +213,6 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGunPongPawn, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraBoom_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/** Camera boom positioning the camera above the character */" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "GunPongPawn.h" },
-		{ "ToolTip", "Camera boom positioning the camera above the character" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGunPongPawn, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraBoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraBoom_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGunPongPawn_Statics::NewProp_MoveSpeed_MetaData[] = {
 		{ "Category", "Gameplay" },
 		{ "Comment", "/* The speed our ship moves around the level */" },
@@ -267,7 +251,6 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGunPongPawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_ShipMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_MoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_FireSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunPongPawn_Statics::NewProp_ProjectileClass,
@@ -300,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGunPongPawn, 2897279267);
+	IMPLEMENT_CLASS(AGunPongPawn, 3228343642);
 	template<> GUNPONG_API UClass* StaticClass<AGunPongPawn>()
 	{
 		return AGunPongPawn::StaticClass();

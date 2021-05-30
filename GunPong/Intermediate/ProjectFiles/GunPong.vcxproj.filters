@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GunPong.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{96BAC35F-D34D-4D7F-BCFE-F7BFE058472E}</UniqueIdentifier>
+      <UniqueIdentifier>{B397DA73-BCD5-4678-85A6-0F77D005140F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GunPong.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{74EBA027-4373-484D-B5EE-85ED926C07F7}</UniqueIdentifier>
+      <UniqueIdentifier>{0AEC507E-2648-4916-B135-301B2E42E0A7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GunPong">
-      <UniqueIdentifier>{43D7AD6C-C960-4961-80A0-E0A27E3C23F4}</UniqueIdentifier>
+      <UniqueIdentifier>{6ABCAC93-9401-4668-AB75-A4C5E37552DF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GunPong\GunPong.Build.cs">
       <Filter>Source\GunPong</Filter>
@@ -39,6 +39,18 @@
       <Filter>Source\GunPong</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GunPong\GunPong.h">
+      <Filter>Source\GunPong</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunPong\GunPongCharacter.cpp">
+      <Filter>Source\GunPong</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunPong\GunPongCharacter.h">
+      <Filter>Source\GunPong</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunPong\GunPongController.cpp">
+      <Filter>Source\GunPong</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunPong\GunPongController.h">
       <Filter>Source\GunPong</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GunPong\GunPongGameMode.cpp">

@@ -8,9 +8,11 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "GameFramework/Controller.h"
 #include "Engine/CollisionProfile.h"
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Sound/SoundBase.h"
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
@@ -20,6 +22,7 @@ const FName AGunPongPawn::MoveRightBinding("MoveRight");
 
 AGunPongPawn::AGunPongPawn()
 {	
+	bReplicates = true;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("/Game/TwinStick/Meshes/TwinStickUFO.TwinStickUFO"));
 	// Create the mesh component
 	ShipMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
@@ -31,27 +34,22 @@ AGunPongPawn::AGunPongPawn()
 	static ConstructorHelpers::FObjectFinder<USoundBase> FireAudio(TEXT("/Game/TwinStick/Audio/TwinStickFire.TwinStickFire"));
 	FireSound = FireAudio.Object;
 
-	// Create a camera boom...
-	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->SetUsingAbsoluteRotation(true); // Don't want arm to rotate when ship does
-	CameraBoom->TargetArmLength = 1200.f;
-	CameraBoom->SetRelativeRotation(FRotator(-80.f, 0.f, 0.f));
-	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
-
 	// Create a camera...
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("TopDownCamera"));
-	CameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
-	CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
+	CameraComponent->AddRelativeLocation(FVector(0, 0, 3000));
+	CameraComponent->AddRelativeRotation(FRotator(-90, 0, 0));
 
 	// Movement
 	MoveSpeed = 600.0f;
 
-	//Initialize projectile class
+	// Initialize projectile class
 	ProjectileClass = AGunPongProjectile::StaticClass();
 	// Weapon
 	FireRate = 1.0f;
 	bIsFiringWeapon = false;
+
+	// Initialize Mouse Direction
+	MouseDirection = FRotator(0, 0, 0);
 }
 
 void AGunPongPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -82,7 +80,7 @@ void AGunPongPawn::Tick(float DeltaSeconds)
 		const FRotator NewRotation = Movement.Rotation();
 		FHitResult Hit(1.f);
 		RootComponent->MoveComponent(Movement, NewRotation, true, &Hit);
-		
+
 		if (Hit.IsValidBlockingHit())
 		{
 			const FVector Normal2D = Hit.Normal.GetSafeNormal2D();
@@ -90,6 +88,17 @@ void AGunPongPawn::Tick(float DeltaSeconds)
 			RootComponent->MoveComponent(Deflection, NewRotation, true);
 		}
 	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+// Replicated Properties
+
+void AGunPongPawn::GetLifetimeReplicatedProps(TArray <FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	//Replicate current health.
+	//DOREPLIFETIME(AThirdPersonMPCharacter, CurrentHealth);
 }
 
 void AGunPongPawn::StartFire()
@@ -110,9 +119,21 @@ void AGunPongPawn::StopFire()
 
 void AGunPongPawn::SpawnProjectile_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, "wa");
-	FVector spawnLocation = GetActorLocation()+ (GetControlRotation().Vector() * 100.0f);
-	FRotator spawnRotation = GetControlRotation();
+	APlayerController* MyController = GetNetOwningPlayer()->PlayerController;
+	float MouseX = 0;
+	float MouseY = 0;
+	bool gotMousePosition = MyController->GetMousePosition(MouseX, MouseY);
+	if (gotMousePosition) {
+		FVector2D ScreenLocation;
+		MyController->ProjectWorldLocationToScreen(GetActorLocation(), ScreenLocation, true);
+		MouseDirection = FRotator(0, 180.0f * atan2(MouseX - ScreenLocation.X, ScreenLocation.Y - MouseY) / PI, 0);
+	}
+
+	FVector spawnLocation = GetActorLocation() + (MouseDirection.Vector() * 100.0f);
+	FRotator spawnRotation = MouseDirection;
+
+	//FString positionsMessage = FString::Printf(TEXT("%f"), MouseDirection.Yaw);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, positionsMessage);
 
 	FActorSpawnParameters spawnParameters;
 	spawnParameters.Instigator = GetInstigator();
@@ -120,4 +141,3 @@ void AGunPongPawn::SpawnProjectile_Implementation()
 
 	AGunPongProjectile* spawnedProjectile = GetWorld()->SpawnActor<AGunPongProjectile>(spawnLocation, spawnRotation, spawnParameters);
 }
-

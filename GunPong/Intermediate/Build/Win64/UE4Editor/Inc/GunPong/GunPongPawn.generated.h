@@ -76,8 +76,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGunPongPawn); \
 
 #define GunPong_Source_GunPong_GunPongPawn_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ShipMeshComponent() { return STRUCT_OFFSET(AGunPongPawn, ShipMeshComponent); } \
-	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(AGunPongPawn, CameraComponent); } \
-	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AGunPongPawn, CameraBoom); }
+	FORCEINLINE static uint32 __PPO__CameraComponent() { return STRUCT_OFFSET(AGunPongPawn, CameraComponent); }
 
 
 #define GunPong_Source_GunPong_GunPongPawn_h_9_PROLOG \
