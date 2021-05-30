@@ -1,44 +1,72 @@
 // Copyright Epic Games, Inc. All Rights Reserve
 
 #include "GunPongProjectile.h"
-#include "GameFramework/ProjectileMovementComponent.h"
-#include "UObject/ConstructorHelpers.h"
+#include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "Engine/StaticMesh.h"
+#include "GameFramework/DamageType.h"
+#include "Particles/ParticleSystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "UObject/ConstructorHelpers.h"
 
 AGunPongProjectile::AGunPongProjectile() 
 {
-	// Static reference to the mesh to use for the projectile
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("/Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile"));
+	bReplicates = true;
+	
+	//Definition for the SphereComponent that will serve as the Root component for the projectile and its collision.
+	SphereComponent = CreateDefaultSubobject<USphereComponent>(TEXT("RootComponent"));
+	SphereComponent->InitSphereRadius(37.5f);
+	SphereComponent->SetCollisionProfileName(TEXT("BlockAllDynamic"));
+	RootComponent = SphereComponent;
 
-	// Create mesh component for the projectile sphere
-	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh0"));
-	ProjectileMesh->SetStaticMesh(ProjectileMeshAsset.Object);
-	ProjectileMesh->SetupAttachment(RootComponent);
-	ProjectileMesh->BodyInstance.SetCollisionProfileName("Projectile");
-	ProjectileMesh->OnComponentHit.AddDynamic(this, &AGunPongProjectile::OnHit);		// set up a notification for when this component hits something
-	RootComponent = ProjectileMesh;
+	//Definition for the Mesh that will serve as our visual representation.
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> DefaultMesh(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	StaticMesh->SetupAttachment(RootComponent);
 
-	// Use a ProjectileMovementComponent to govern this projectile's movement
-	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement0"));
-	ProjectileMovement->UpdatedComponent = ProjectileMesh;
-	ProjectileMovement->InitialSpeed = 3000.f;
-	ProjectileMovement->MaxSpeed = 3000.f;
-	ProjectileMovement->bRotationFollowsVelocity = true;
-	ProjectileMovement->bShouldBounce = false;
-	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity
+	//Set the Static Mesh and its position/scale if we successfully found a mesh asset to use.
+	if (DefaultMesh.Succeeded())
+	{
+		StaticMesh->SetStaticMesh(DefaultMesh.Object);
+		StaticMesh->SetRelativeLocation(FVector(0.0f, 0.0f, -37.5f));
+		StaticMesh->SetRelativeScale3D(FVector(0.75f, 0.75f, 0.75f));
+	}
 
-	// Die after 3 seconds by default
-	InitialLifeSpan = 3.0f;
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExplosionEffect(TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"));
+	if (DefaultExplosionEffect.Succeeded())
+	{
+		ExplosionEffect = DefaultExplosionEffect.Object;
+	}
+
+	//Definition for the Projectile Movement Component.
+	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
+	ProjectileMovementComponent->SetUpdatedComponent(SphereComponent);
+	ProjectileMovementComponent->InitialSpeed = 1500.0f;
+	ProjectileMovementComponent->MaxSpeed = 1500.0f;
+	ProjectileMovementComponent->bRotationFollowsVelocity = true;
+	ProjectileMovementComponent->ProjectileGravityScale = 0.0f;
+
+	DamageType = UDamageType::StaticClass();
+	Damage = 10.0f;
+
+	//Registering the Projectile Impact function on a Hit event.
+	if (GetLocalRole() == ROLE_Authority)
+	{
+		SphereComponent->OnComponentHit.AddDynamic(this, &AGunPongProjectile::OnProjectileImpact);
+	}
 }
 
-void AGunPongProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+void AGunPongProjectile::Destroyed()
 {
-	// Only add impulse and destroy projectile if we hit a physics
-	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
+	FVector spawnLocation = GetActorLocation();
+	UGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, spawnLocation, FRotator::ZeroRotator, true, EPSCPoolMethod::AutoRelease);
+}
+
+void AGunPongProjectile::OnProjectileImpact(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (OtherActor)
 	{
-		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
+		UGameplayStatics::ApplyPointDamage(OtherActor, Damage, NormalImpulse, Hit, GetInstigator()->Controller, this, DamageType);
 	}
 
 	Destroy();

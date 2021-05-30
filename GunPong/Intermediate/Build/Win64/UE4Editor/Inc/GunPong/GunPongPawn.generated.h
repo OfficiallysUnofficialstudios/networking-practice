@@ -14,8 +14,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GUNPONG_GunPongPawn_generated_h
 
 #define GunPong_Source_GunPong_GunPongPawn_h_12_SPARSE_DATA
-#define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS
-#define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS \
+	virtual void SpawnProjectile_Implementation(); \
+ \
+	DECLARE_FUNCTION(execSpawnProjectile); \
+	DECLARE_FUNCTION(execStopFire); \
+	DECLARE_FUNCTION(execStartFire);
+
+
+#define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void SpawnProjectile_Implementation(); \
+ \
+	DECLARE_FUNCTION(execSpawnProjectile); \
+	DECLARE_FUNCTION(execStopFire); \
+	DECLARE_FUNCTION(execStartFire);
+
+
+#define GunPong_Source_GunPong_GunPongPawn_h_12_EVENT_PARMS
+#define GunPong_Source_GunPong_GunPongPawn_h_12_CALLBACK_WRAPPERS
 #define GunPong_Source_GunPong_GunPongPawn_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGunPongPawn(); \
@@ -64,13 +80,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGunPongPawn); \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AGunPongPawn, CameraBoom); }
 
 
-#define GunPong_Source_GunPong_GunPongPawn_h_9_PROLOG
+#define GunPong_Source_GunPong_GunPongPawn_h_9_PROLOG \
+	GunPong_Source_GunPong_GunPongPawn_h_12_EVENT_PARMS
+
+
 #define GunPong_Source_GunPong_GunPongPawn_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	GunPong_Source_GunPong_GunPongPawn_h_12_PRIVATE_PROPERTY_OFFSET \
 	GunPong_Source_GunPong_GunPongPawn_h_12_SPARSE_DATA \
 	GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS \
+	GunPong_Source_GunPong_GunPongPawn_h_12_CALLBACK_WRAPPERS \
 	GunPong_Source_GunPong_GunPongPawn_h_12_INCLASS \
 	GunPong_Source_GunPong_GunPongPawn_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -83,6 +103,7 @@ public: \
 	GunPong_Source_GunPong_GunPongPawn_h_12_PRIVATE_PROPERTY_OFFSET \
 	GunPong_Source_GunPong_GunPongPawn_h_12_SPARSE_DATA \
 	GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	GunPong_Source_GunPong_GunPongPawn_h_12_CALLBACK_WRAPPERS \
 	GunPong_Source_GunPong_GunPongPawn_h_12_INCLASS_NO_PURE_DECLS \
 	GunPong_Source_GunPong_GunPongPawn_h_12_ENHANCED_CONSTRUCTORS \
 private: \

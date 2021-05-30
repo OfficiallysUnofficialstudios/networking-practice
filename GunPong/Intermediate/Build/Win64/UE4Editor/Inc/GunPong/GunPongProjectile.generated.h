@@ -20,12 +20,12 @@ struct FHitResult;
 #define GunPong_Source_GunPong_GunPongProjectile_h_15_SPARSE_DATA
 #define GunPong_Source_GunPong_GunPongProjectile_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnHit);
+	DECLARE_FUNCTION(execOnProjectileImpact);
 
 
 #define GunPong_Source_GunPong_GunPongProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnHit);
+	DECLARE_FUNCTION(execOnProjectileImpact);
 
 
 #define GunPong_Source_GunPong_GunPongProjectile_h_15_INCLASS_NO_PURE_DECLS \

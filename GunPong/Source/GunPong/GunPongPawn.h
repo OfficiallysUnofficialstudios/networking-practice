@@ -26,14 +26,6 @@ class AGunPongPawn : public APawn
 public:
 	AGunPongPawn();
 
-	/** Offset from the ships location to spawn projectiles */
-	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite )
-	FVector GunOffset;
-	
-	/* How fast the weapon will fire */
-	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
-	float FireRate;
-
 	/* The speed our ship moves around the level */
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float MoveSpeed;
@@ -47,25 +39,35 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End Actor Interface
 
-	/* Fire a shot in the specified direction */
-	void FireShot(FVector FireDirection);
+	UPROPERTY(EditDefaultsOnly, Category = "Gameplay|Projectile")
+		TSubclassOf<class AGunPongProjectile> ProjectileClass;
 
-	/* Handler for the fire timer expiry */
-	void ShotTimerExpired();
+	/** Delay between shots in seconds. Used to control fire rate for our test projectile, but also to prevent an overflow of server functions from binding SpawnProjectile directly to input.*/
+	UPROPERTY(EditDefaultsOnly, Category = "Gameplay")
+		float FireRate;
+
+	/** If true, we are in the process of firing projectiles. */
+	bool bIsFiringWeapon;
+
+	/** Function for beginning weapon fire.*/
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+		void StartFire();
+
+	/** Function for ending weapon fire. Once this is called, the player can use StartFire again.*/
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+		void StopFire();
+
+	/** Server function for spawning projectiles.*/
+	UFUNCTION(Server, Reliable)
+		void SpawnProjectile();
+
+	/** A timer handle used for providing the fire rate delay in-between spawns.*/
+	FTimerHandle FiringTimer;
+
 
 	// Static names for axis bindings
 	static const FName MoveForwardBinding;
 	static const FName MoveRightBinding;
-	static const FName FireForwardBinding;
-	static const FName FireRightBinding;
-
-private:
-
-	/* Flag to control firing  */
-	uint32 bCanFire : 1;
-
-	/** Handle for efficient management of ShotTimerExpired timer */
-	FTimerHandle TimerHandle_ShotTimerExpired;
 
 public:
 	/** Returns ShipMeshComponent subobject **/

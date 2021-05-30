@@ -12,11 +12,11 @@
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "Net/UnrealNetwork.h"
+#include "Engine/Engine.h"
 
 const FName AGunPongPawn::MoveForwardBinding("MoveForward");
 const FName AGunPongPawn::MoveRightBinding("MoveRight");
-const FName AGunPongPawn::FireForwardBinding("FireForward");
-const FName AGunPongPawn::FireRightBinding("FireRight");
 
 AGunPongPawn::AGunPongPawn()
 {	
@@ -45,11 +45,13 @@ AGunPongPawn::AGunPongPawn()
 	CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
 
 	// Movement
-	MoveSpeed = 1000.0f;
+	MoveSpeed = 600.0f;
+
+	//Initialize projectile class
+	ProjectileClass = AGunPongProjectile::StaticClass();
 	// Weapon
-	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
-	bCanFire = true;
+	FireRate = 1.0f;
+	bIsFiringWeapon = false;
 }
 
 void AGunPongPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -59,8 +61,7 @@ void AGunPongPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputC
 	// set up gameplay key bindings
 	PlayerInputComponent->BindAxis(MoveForwardBinding);
 	PlayerInputComponent->BindAxis(MoveRightBinding);
-	PlayerInputComponent->BindAxis(FireForwardBinding);
-	PlayerInputComponent->BindAxis(FireRightBinding);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AGunPongPawn::StartFire);
 }
 
 void AGunPongPawn::Tick(float DeltaSeconds)
@@ -89,51 +90,34 @@ void AGunPongPawn::Tick(float DeltaSeconds)
 			RootComponent->MoveComponent(Deflection, NewRotation, true);
 		}
 	}
-	
-	// Create fire direction vector
-	const float FireForwardValue = GetInputAxisValue(FireForwardBinding);
-	const float FireRightValue = GetInputAxisValue(FireRightBinding);
-	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, 0.f);
-
-	// Try and fire a shot
-	FireShot(FireDirection);
 }
 
-void AGunPongPawn::FireShot(FVector FireDirection)
+void AGunPongPawn::StartFire()
 {
-	// If it's ok to fire again
-	if (bCanFire == true)
+	if (!bIsFiringWeapon)
 	{
-		// If we are pressing fire stick in a direction
-		if (FireDirection.SizeSquared() > 0.0f)
-		{
-			const FRotator FireRotation = FireDirection.Rotation();
-			// Spawn projectile at an offset from this pawn
-			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
-
-			UWorld* const World = GetWorld();
-			if (World != nullptr)
-			{
-				// spawn the projectile
-				World->SpawnActor<AGunPongProjectile>(SpawnLocation, FireRotation);
-			}
-
-			bCanFire = false;
-			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AGunPongPawn::ShotTimerExpired, FireRate);
-
-			// try and play the sound if specified
-			if (FireSound != nullptr)
-			{
-				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-			}
-
-			bCanFire = false;
-		}
+		bIsFiringWeapon = true;
+		UWorld* World = GetWorld();
+		World->GetTimerManager().SetTimer(FiringTimer, this, &AGunPongPawn::StopFire, FireRate, false);
+		SpawnProjectile();
 	}
 }
 
-void AGunPongPawn::ShotTimerExpired()
+void AGunPongPawn::StopFire()
 {
-	bCanFire = true;
+	bIsFiringWeapon = false;
+}
+
+void AGunPongPawn::SpawnProjectile_Implementation()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, "wa");
+	FVector spawnLocation = GetActorLocation()+ (GetControlRotation().Vector() * 100.0f);
+	FRotator spawnRotation = GetControlRotation();
+
+	FActorSpawnParameters spawnParameters;
+	spawnParameters.Instigator = GetInstigator();
+	spawnParameters.Owner = this;
+
+	AGunPongProjectile* spawnedProjectile = GetWorld()->SpawnActor<AGunPongProjectile>(spawnLocation, spawnRotation, spawnParameters);
 }
 
