@@ -19,10 +19,6 @@ class AGunPongPawn : public APawn
 	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* CameraComponent;
 
-private:
-	FRotator MouseDirection;
-	float MoveForward;
-	float MoveRight;
 
 public:
 	AGunPongPawn();
@@ -63,7 +59,7 @@ public:
 
 	/** Server function for spawning projectiles.*/
 	UFUNCTION(Server, Reliable)
-		void SpawnProjectile();
+		void SpawnProjectile(FRotator ClickDirection);
 
 	/** A timer handle used for providing the fire rate delay in-between spawns.*/
 	FTimerHandle FiringTimer;
@@ -71,6 +67,8 @@ public:
 	// Static names for axis bindings
 	static const FName MoveForwardBinding;
 	static const FName MoveRightBinding;
+
+	FRotator MouseDirection;
 
 public:
 	/** Returns ShipMeshComponent subobject **/

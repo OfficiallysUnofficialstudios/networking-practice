@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FRotator;
 #ifdef GUNPONG_GunPongPawn_generated_h
 #error "GunPongPawn.generated.h already included, missing '#pragma once' in GunPongPawn.h"
 #endif
@@ -15,7 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GunPong_Source_GunPong_GunPongPawn_h_12_SPARSE_DATA
 #define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS \
-	virtual void SpawnProjectile_Implementation(); \
+	virtual void SpawnProjectile_Implementation(FRotator ClickDirection); \
  \
 	DECLARE_FUNCTION(execSpawnProjectile); \
 	DECLARE_FUNCTION(execStopFire); \
@@ -23,14 +24,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define GunPong_Source_GunPong_GunPongPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void SpawnProjectile_Implementation(); \
+	virtual void SpawnProjectile_Implementation(FRotator ClickDirection); \
  \
 	DECLARE_FUNCTION(execSpawnProjectile); \
 	DECLARE_FUNCTION(execStopFire); \
 	DECLARE_FUNCTION(execStartFire);
 
 
-#define GunPong_Source_GunPong_GunPongPawn_h_12_EVENT_PARMS
+#define GunPong_Source_GunPong_GunPongPawn_h_12_EVENT_PARMS \
+	struct GunPongPawn_eventSpawnProjectile_Parms \
+	{ \
+		FRotator ClickDirection; \
+	};
+
+
 #define GunPong_Source_GunPong_GunPongPawn_h_12_CALLBACK_WRAPPERS
 #define GunPong_Source_GunPong_GunPongPawn_h_12_INCLASS_NO_PURE_DECLS \
 private: \

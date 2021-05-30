@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 	GUNPONG_API UClass* Z_Construct_UClass_AGunPongPawn();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_GunPong();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
@@ -25,9 +26,10 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 // End Cross Module References
 	DEFINE_FUNCTION(AGunPongPawn::execSpawnProjectile)
 	{
+		P_GET_STRUCT(FRotator,Z_Param_ClickDirection);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->SpawnProjectile_Implementation();
+		P_THIS->SpawnProjectile_Implementation(Z_Param_ClickDirection);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AGunPongPawn::execStopFire)
@@ -45,9 +47,11 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 		P_NATIVE_END;
 	}
 	static FName NAME_AGunPongPawn_SpawnProjectile = FName(TEXT("SpawnProjectile"));
-	void AGunPongPawn::SpawnProjectile()
+	void AGunPongPawn::SpawnProjectile(FRotator ClickDirection)
 	{
-		ProcessEvent(FindFunctionChecked(NAME_AGunPongPawn_SpawnProjectile),NULL);
+		GunPongPawn_eventSpawnProjectile_Parms Parms;
+		Parms.ClickDirection=ClickDirection;
+		ProcessEvent(FindFunctionChecked(NAME_AGunPongPawn_SpawnProjectile),&Parms);
 	}
 	void AGunPongPawn::StaticRegisterNativesAGunPongPawn()
 	{
@@ -61,10 +65,16 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 	}
 	struct Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics
 	{
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ClickDirection;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::NewProp_ClickDirection = { "ClickDirection", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunPongPawn_eventSpawnProjectile_Parms, ClickDirection), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::NewProp_ClickDirection,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::Function_MetaDataParams[] = {
@@ -73,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 		{ "ToolTip", "Server function for spawning projectiles." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunPongPawn, nullptr, "SpawnProjectile", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunPongPawn, nullptr, "SpawnProjectile", nullptr, nullptr, sizeof(GunPongPawn_eventSpawnProjectile_Parms), Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunPongPawn_SpawnProjectile_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AGunPongPawn_SpawnProjectile()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -177,7 +187,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GunPong,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGunPongPawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGunPongPawn_SpawnProjectile, "SpawnProjectile" }, // 572287154
+		{ &Z_Construct_UFunction_AGunPongPawn_SpawnProjectile, "SpawnProjectile" }, // 4065053801
 		{ &Z_Construct_UFunction_AGunPongPawn_StartFire, "StartFire" }, // 2038221399
 		{ &Z_Construct_UFunction_AGunPongPawn_StopFire, "StopFire" }, // 34211248
 	};
@@ -283,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPongPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGunPongPawn, 3228343642);
+	IMPLEMENT_CLASS(AGunPongPawn, 3999758450);
 	template<> GUNPONG_API UClass* StaticClass<AGunPongPawn>()
 	{
 		return AGunPongPawn::StaticClass();

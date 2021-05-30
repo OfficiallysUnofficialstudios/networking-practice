@@ -14,15 +14,29 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GUNPONG_GunPongController_generated_h
 
 #define GunPong_Source_GunPong_GunPongController_h_15_SPARSE_DATA
-#define GunPong_Source_GunPong_GunPongController_h_15_RPC_WRAPPERS
-#define GunPong_Source_GunPong_GunPongController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define GunPong_Source_GunPong_GunPongController_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnRep_ClickLocation);
+
+
+#define GunPong_Source_GunPong_GunPongController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_ClickLocation);
+
+
 #define GunPong_Source_GunPong_GunPongController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGunPongController(); \
 	friend struct Z_Construct_UClass_AGunPongController_Statics; \
 public: \
 	DECLARE_CLASS(AGunPongController, APlayerController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GunPong"), NO_API) \
-	DECLARE_SERIALIZER(AGunPongController)
+	DECLARE_SERIALIZER(AGunPongController) \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		ClickLocation=NETFIELD_REP_START, \
+		NETFIELD_REP_END=ClickLocation	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define GunPong_Source_GunPong_GunPongController_h_15_INCLASS \
@@ -31,7 +45,13 @@ private: \
 	friend struct Z_Construct_UClass_AGunPongController_Statics; \
 public: \
 	DECLARE_CLASS(AGunPongController, APlayerController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GunPong"), NO_API) \
-	DECLARE_SERIALIZER(AGunPongController)
+	DECLARE_SERIALIZER(AGunPongController) \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		ClickLocation=NETFIELD_REP_START, \
+		NETFIELD_REP_END=ClickLocation	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define GunPong_Source_GunPong_GunPongController_h_15_STANDARD_CONSTRUCTORS \

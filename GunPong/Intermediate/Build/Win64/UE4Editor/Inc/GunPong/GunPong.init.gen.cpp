@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGunPong_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xE14A0D12,
+				0x4E4C7B69,
 				0xB2D73420,
 				METADATA_PARAMS(nullptr, 0)
 			};
