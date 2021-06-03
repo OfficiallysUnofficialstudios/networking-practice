@@ -1,0 +1,566 @@
+﻿Log file open, 06/02/21 21:36:01
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: GunPong
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 17 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.407844
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin MultiUserTakes
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin ConcertMain
+LogPluginManager: Mounting plugin MultiUserClient
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin SQLiteCore
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin ConcertSyncClient
+LogPluginManager: Mounting plugin ConcertSyncCore
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, GPU: NVIDIA GeForce GTX 1660 Ti
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line:  /Game/TwinStickCPP/Maps/TwinStickExampleMap -game -PIEVIACONSOLE -Multiprocess -server -log GameUserSettingsINI=C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/PIEGameUserSettings0.ini -MultiprocessSaveConfig -MultiprocessOSS -messaging -SessionName="Play in Standalone Game" -featureleveles31 -faketouches -MultiprocessSaveConfig -port=17777 -windowed
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.06.03-01.36.02:531][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2021.06.03-01.36.02:531][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.06.03-01.36.02:531][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:531][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.06.03-01.36.02:532][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:532][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:532][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.06.03-01.36.02:532][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.06.03-01.36.02:533][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.06.03-01.36.02:533][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.06.03-01.36.02:533][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.06.03-01.36.02:533][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.06.03-01.36.02:534][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.06.03-01.36.02:534][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.06.03-01.36.02:534][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.06.03-01.36.02:535][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.06.03-01.36.02:535][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.06.03-01.36.02:535][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.06.03-01.36.02:535][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.06.03-01.36.02:536][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.06.03-01.36.02:536][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:536][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.06.03-01.36.02:536][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.06.03-01.36.02:537][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.06.03-01.36.02:537][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.06.03-01.36.02:537][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.06.03-01.36.02:537][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.06.03-01.36.02:538][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.06.03-01.36.02:538][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.06.03-01.36.02:538][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.06.03-01.36.02:539][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.06.03-01.36.02:539][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.06.03-01.36.02:539][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.06.03-01.36.02:539][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.06.03-01.36.02:540][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2021.06.03-01.36.02:540][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:540][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:541][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:541][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.03-01.36.02:541][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.06.03-01.36.02:541][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:542][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.06.03-01.36.02:542][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:542][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.03-01.36.02:542][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.03-01.36.02:543][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.03-01.36.02:543][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.06.03-01.36.02:543][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.06.03-01.36.02:543][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.06.03-01.36.02:544][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.03-01.36.02:547][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.03-01.36.02:547][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.03-01.36.02:547][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.03-01.36.02:548][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.03-01.36.02:548][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.03-01.36.02:548][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.03-01.36.02:548][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.06.03-01.36.02:549][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.03-01.36.02:549][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.06.03-01.36.02:549][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.03-01.36.02:550][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.03-01.36.02:550][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:550][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.03-01.36.02:550][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.03-01.36.02:551][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.03-01.36.02:551][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.03-01.36.02:551][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.03-01.36.02:552][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.06.03-01.36.02:552][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.06.03-01.36.02:552][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.06.03-01.36.02:552][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.03-01.36.02:553][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.03-01.36.02:553][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.03-01.36.02:553][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.03-01.36.02:554][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.03-01.36.02:554][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.03-01.36.02:554][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.03-01.36.02:555][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.03-01.36.02:555][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.03-01.36.02:555][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.03-01.36.02:556][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.03-01.36.02:556][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.06.03-01.36.02:556][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.06.03-01.36.02:557][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.03-01.36.02:557][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.06.03-01.36.02:557][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.06.03-01.36.02:558][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.06.03-01.36.02:558][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.06.03-01.36.02:558][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.06.03-01.36.02:559][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.03-01.36.02:559][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.03-01.36.02:559][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.03-01.36.02:560][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:562][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.03-01.36.02:563][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.03-01.36.02:563][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.03-01.36.02:563][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.03-01.36.02:564][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.03-01.36.02:564][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.03-01.36.02:564][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.03-01.36.02:564][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.06.03-01.36.02:565][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.03-01.36.02:565][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:565][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.03-01.36.02:566][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.03-01.36.02:566][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.06.03-01.36.02:567][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.03-01.36.02:567][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.03-01.36.02:567][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.03-01.36.02:568][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.03-01.36.02:568][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.03-01.36.02:568][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.06.03-01.36.02:569][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.03-01.36.02:569][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.03-01.36.02:569][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.03-01.36.02:570][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.03-01.36.02:570][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.06.03-01.36.02:570][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.03-01.36.02:570][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.03-01.36.02:571][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.06.03-01.36.02:571][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.06.03-01.36.02:571][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.06.03-01.36.02:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.06.03-01.36.02:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.03-01.36.02:572][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.06.03-01.36.02:573][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.06.03-01.36.02:573][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.06.03-01.36.02:573][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.03-01.36.02:574][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.06.03-01.36.02:575][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.06.03-01.36.02:575][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:577][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.03-01.36.02:579][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.03-01.36.02:579][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:580][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.06.03-01.36.02:580][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.06.03-01.36.02:581][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.06.03-01.36.02:581][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.03-01.36.02:582][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.06.03-01.36.02:582][  0]LogHAL: Display: Platform has ~ 16 GB [17095184384 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.06.03-01.36.02:582][  0]LogInit: Going up to parent DeviceProfile []
+[2021.06.03-01.36.02:583][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:583][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.03-01.36.02:583][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.06.03-01.36.02:584][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:584][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.06.03-01.36.02:584][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:585][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.03-01.36.02:585][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.03-01.36.02:585][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.03-01.36.02:586][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.06.03-01.36.02:586][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.06.03-01.36.02:587][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.06.03-01.36.02:587][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.03-01.36.02:587][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.03-01.36.02:588][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.03-01.36.02:588][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.03-01.36.02:589][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.03-01.36.02:589][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.03-01.36.02:589][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.03-01.36.02:589][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.06.03-01.36.02:590][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.03-01.36.02:590][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.06.03-01.36.02:591][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.03-01.36.02:591][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.03-01.36.02:591][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:592][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.03-01.36.02:595][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.03-01.36.02:595][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.03-01.36.02:596][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.03-01.36.02:596][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.03-01.36.02:596][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.06.03-01.36.02:597][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.06.03-01.36.02:597][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.06.03-01.36.02:598][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.03-01.36.02:598][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.03-01.36.02:598][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.03-01.36.02:599][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.03-01.36.02:599][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.03-01.36.02:599][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.03-01.36.02:600][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.03-01.36.02:601][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.03-01.36.02:602][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.03-01.36.02:602][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.03-01.36.02:602][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.03-01.36.02:603][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.06.03-01.36.02:603][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.06.03-01.36.02:603][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.03-01.36.02:604][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.06.03-01.36.02:604][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.06.03-01.36.02:604][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.06.03-01.36.02:605][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.06.03-01.36.02:605][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.06.03-01.36.02:606][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.03-01.36.02:606][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.03-01.36.02:606][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.03-01.36.02:607][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:607][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.03-01.36.02:608][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.03-01.36.02:610][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.03-01.36.02:610][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.03-01.36.02:610][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.03-01.36.02:611][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.03-01.36.02:611][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.03-01.36.02:611][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.06.03-01.36.02:612][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.03-01.36.02:612][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:612][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.03-01.36.02:613][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.03-01.36.02:613][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.06.03-01.36.02:613][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.03-01.36.02:614][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.03-01.36.02:614][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.03-01.36.02:615][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.03-01.36.02:615][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.03-01.36.02:615][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.06.03-01.36.02:616][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.03-01.36.02:616][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.03-01.36.02:616][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.03-01.36.02:616][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.03-01.36.02:617][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.06.03-01.36.02:617][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.03-01.36.02:617][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.03-01.36.02:618][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.06.03-01.36.02:618][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.06.03-01.36.02:619][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.06.03-01.36.02:619][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.06.03-01.36.02:620][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.03-01.36.02:620][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.06.03-01.36.02:620][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.06.03-01.36.02:621][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.06.03-01.36.02:621][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.03-01.36.02:621][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.06.03-01.36.02:622][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.06.03-01.36.02:622][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:622][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.03-01.36.02:623][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.03-01.36.02:625][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Scalability.ini]
+[2021.06.03-01.36.02:626][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.06.03-01.36.02:626][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.06.03-01.36.02:626][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.06.03-01.36.02:627][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.06.03-01.36.02:628][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.06.03-01.36.02:628][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.06.03-01.36.02:628][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.06.03-01.36.02:629][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Engine.ini]
+[2021.06.03-01.36.02:629][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/biosa/Documents/GitHub/networking-practice/GunPong/Saved/Config/Windows/Editor.ini]
+[2021.06.03-01.36.02:629][  0]LogInit: Computer: LAPTOP-KFQKP81F
+[2021.06.03-01.36.02:629][  0]LogInit: User: biosa
+[2021.06.03-01.36.02:629][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.06.03-01.36.02:630][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.06.03-01.36.02:630][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.06.03-01.36.02:630][  0]LogMemory: Platform Memory Stats for Windows
+[2021.06.03-01.36.02:631][  0]LogMemory: Process Physical Memory: 127.48 MB used, 127.48 MB peak
+[2021.06.03-01.36.02:631][  0]LogMemory: Process Virtual Memory: 101.10 MB used, 101.10 MB peak
+[2021.06.03-01.36.02:631][  0]LogMemory: Physical Memory: 15710.37 MB used,  592.87 MB free, 16303.24 MB total
+[2021.06.03-01.36.02:632][  0]LogMemory: Virtual Memory: 134212688.00 MB used,  5036.81 MB free, 134217728.00 MB total
+[2021.06.03-01.36.02:635][  0]LogWindows: WindowsPlatformFeatures disabled or dedicated server build
+[2021.06.03-01.36.02:654][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.06.03-01.36.02:654][  0]LogInit: Using OS detected language (en-US).
+[2021.06.03-01.36.02:655][  0]LogInit: Using OS detected locale (en-CA).
+[2021.06.03-01.36.02:661][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.06.03-01.36.03:226][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.06.03-01.36.03:230][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.06.03-01.36.03:239][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.06.03-01.36.03:248][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.06.03-01.36.03:248][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.06.03-01.36.03:253][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.06.03-01.36.03:287][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2021.06.03-01.36.03:288][  0]LogShaderCompilers: Guid format shader working directory is -29 characters bigger than the processId version (../../../../../../Users/biosa/Documents/GitHub/networking-practice/GunPong/Intermediate/Shaders/WorkingDirectory/48664/).
+[2021.06.03-01.36.03:288][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/biosa/AppData/Local/Temp/UnrealShaderWorkingDir/D0D3DA894446FCB1C08F1889AC713989/'.
+[2021.06.03-01.36.03:289][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.06.03-01.36.03:289][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.06.03-01.36.03:882][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.06.03-01.36.04:061][  0]LogDerivedDataCache: Loaded boot cache 0.18s 78MB C:/Users/biosa/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2021.06.03-01.36.04:061][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/biosa/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2021.06.03-01.36.04:062][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/biosa/Documents/GitHub/networking-practice/GunPong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.06.03-01.36.04:062][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.06.03-01.36.04:063][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/biosa/Documents/GitHub/networking-practice/GunPong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.03-01.36.04:063][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.06.03-01.36.04:076][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.06.03-01.36.04:076][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.03-01.36.04:076][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.06.03-01.36.04:090][  0]LogDerivedDataCache: Speed tests for C:/Users/biosa/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2021.06.03-01.36.04:090][  0]LogDerivedDataCache: Display: Performance to C:/Users/biosa/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=200.45MBs, RandomWriteSpeed=109.19MBs. Assigned SpeedClass 'Local'
+[2021.06.03-01.36.04:092][  0]LogDerivedDataCache: Using Local data cache path C:/Users/biosa/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.06.03-01.36.04:092][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.06.03-01.36.04:093][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.06.03-01.36.04:101][  0]LogInit: Using OS detected language (en-US).
+[2021.06.03-01.36.04:101][  0]LogInit: Using OS detected locale (en-CA).
+[2021.06.03-01.36.04:101][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2021.06.03-01.36.04:102][  0]LogTextLocalizationManager: No localization for 'en-CA' exists, so 'en' will be used for the locale.
+[2021.06.03-01.36.04:103][  0]LogTextLocalizationManager: Compacting localization data took   0.01ms
+[2021.06.03-01.36.04:108][  0]LogAssetRegistry: FAssetRegistry took 0.0023 seconds to start up
+[2021.06.03-01.36.04:440][  0]LogPackageLocalizationCache: Processed 25 localized package path(s) for 1 prioritized culture(s) in 0.002074 seconds
+[2021.06.03-01.36.04:552][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.03-01.36.04:552][  0]LogInit: Active device profile: [00000190FA8FA400][00000190F7101C00 49] Windows
+[2021.06.03-01.36.04:552][  0]LogInit: Profiles: [00000190FA8FA400][00000190F7101C00 49] Windows, [00000190FA891A00][00000190F710E200 49] WindowsNoEditor, [00000190FA8F9700][00000190F71124C0 49] WindowsServer, [00000190FA892600][00000190F7116780 49] WindowsClient, [00000190FA8F9100][00000190F711AA40 49] IOS, [00000190FA893B00][00000190F711ED00 49] iPadAir, [00000190FA8F9300][00000190F7104F80 49] iPadAir2, [00000190FA845900][00000190F713D480 49] IPadPro, [00000190FA845A00][00000190F71234C0 49] iPadAir3, [00000190FA8F8200][00000190F7135780 49] iPadAir4, [00000190FA847A00][00000190F7131A40 49] iPadMini2, [00000190FA845000][00000190F7139D00 49] iPadMini3, [00000190FA891600][00000190F7146300 49] iPadMini4, [00000190FA845D00][00000190F714A5C0 49] iPadMini5, [00000190FA86CE00][00000190F715EB00 49] iPhone6, [00000190FA86CF00][00000190F714EB40 49] iPodTouch6, [00000190FA8F8700][00000190F7163040 49] iPhone7, [00000190FA8F8800][00000190F7157080 49] iPodTouch7, [00000190FA86ED00][00000190F715B340 49] iPhone5S, [00000190FA86FC00][00000190F7153600 49] iPhone6Plus, [00000190FA891900][00000190F71678C0 49] iPhone6S, [00000190FA86D200][00000190F716BB80 49] iPhone6SPlus, [00000190FA892900][00000190F716E180 49] iPhone7Plus, [00000190FA86F300][00000190F7172440 49] iPhoneSE, [00000190FA890F00][00000190F7176700 49] iPhone8, [00000190FA86EC00][00000190F717A9C0 49] iPhone8Plus, [00000190FA892700][00000190F717EC80 49] iPhoneX, [00000190FA86C800][00000190F7126F00 49] iPhoneXS, [00000190FA893400][00000190F7183180 49] iPhoneXSMax, [00000190FA86DD00][00000190F718B440 49] iPhoneXR, [00000190FA891300][00000190F5A85700 49] iPhone11, [00000190FA86FF00][00000190F5A899C0 49] iPhone11Pro, [00000190FA893600][00000190F5A8DC80 49] iPhone11ProMax, [00000190FA86D700][00000190F5A90280 49] iPhoneSE2, [00000190FA892F00][00000190F5A94540 49] iPhone12Mini, [00000190FA86DC00][00000190F5A98800 49] iPhone12, [00000190FA8FAC00][00000190F5A9CAC0 49] iPhone12Pro, [00000190FA86F200][00000190F5AA0D80 49] iPhone12ProMax, [00000190FA8F9C00][00000190F7187000 49] iPadPro105, [00000190FA86F700][00000190F5AA5280 49] iPadPro129, [00000190FA8F8300][00000190F5AAD540 49] iPadPro97, [00000190FA86EF00][00000190F5AB1800 49] iPadPro2_129, [00000190FA8FA600][00000190F5AB5AC0 49] iPad5, [00000190FA86E800][00000190F5AB80C0 49] iPad6, [00000190FA8F8D00][00000190FAE40380 49] iPad7, [00000190FA86C300][00000190FAE44640 49] iPad8, [00000190FA8F9E00][00000190FAE48900 49] iPadPro11, [00000190FA86C400][00000190FAE4CBC0 49] iPadPro2_11, [00000190FA8F9D00][00000190FAE50E80 49] iPadPro3_129, [00000190FA86F900][00000190F5AA9100 49] iPadPro4_129, [00000190FA8F9B00][00000190FAE55380 49] AppleTV, [00000190FA86EE00][00000190FAE5D640 49] AppleTV4K, [00000190FA8FA300][00000190FAE61900 49] TVOS, [00000190FA86FB00][00000190FAE65BC0 49] Mac, [00000190FA8F8C00][00000190FAE681C0 49] MacClient, [00000190FA86C900][00000190FAE6C480 49] MacNoEditor, [00000190FA8F8600][00000190FAE70740 49] MacServer, [00000190FA86F800][00000190FAE74A00 49] Linux, [00000190FA8FAD00][00000190FAE78CC0 49] LinuxAArch64, [00000190FA86FA00][00000190FAE7CF80 49] LinuxNoEditor, [00000190FA8FB300][00000190FAE59200 49] LinuxAArch64NoEditor, [00000190FA86D900][00000190FAE81480 49] LinuxClient, [00000190FA8FAF00][00000190FAE89740 49] LinuxAArch64Client, [00000190FA86F400][00000190FAE8DA00 49] LinuxServer, [00000190FA8FB000][00000190FAE91CC0 49] LinuxAArch64Server, [00000190FA86FD00][00000190FAE942C0 49] Android, [00000190FA8FA800][00000190FAE98580 49] Android_Low, [00000190FA86C700][00000190FAE9C840 49] Android_Mid, [00000190FA892000][00000190FAEA0B00 49] Android_High, [00000190FA844500][00000190FAEA4DC0 49] Android_Default, [00000190FA891400][00000190FAEA9080 49] Android_Adreno4xx, [00000190FA847600][00000190FAE85300 49] Android_Adreno5xx_Low, [00000190FA890400][00000190FAEAD580 49] Android_Adreno5xx, [00000190FA846500][00000190FAEB5840 49] Android_Adreno6xx, [00000190FA891200][00000190FAEB9B00 49] Android_Adreno6xx_Vulkan, [00000190FA844600][00000190FAEBC100 49] Android_Mali_T6xx, [00000190FA892300][00000190FAEC03C0 49] Android_Mali_T7xx, [00000190FA845100][00000190FAEC4680 49] Android_Mali_T8xx, [00000190FA893E00][00000190FAEC8940 49] Android_Mali_G71, [00000190FA846800][00000190FAECCC00 49] Android_Mali_G72, [00000190FA892B00][00000190FAED0EC0 49] Android_Mali_G72_Vulkan, [00000190FA844D00][00000190FAED5180 49] Android_Mali_G76, [00000190FA893A00][00000190FAEB1400 49] Android_Mali_G76_Vulkan, [00000190FA846600][00000190FAED9680 49] Android_Mali_G77, [00000190FA890700][00000190FAEE1940 49] Android_Mali_G77_Vulkan, [00000190FA844900][00000190FAEE5C00 49] Android_Vulkan_SM5, [00000190FA890600][00000190FAEE8200 49] Android_PowerVR_G6xxx, [00000190FA846300][00000190FAEEC4C0 49] Android_PowerVR_GT7xxx, [00000190FA891800][00000190FAEF0780 49] Android_PowerVR_GE8xxx, [00000190FA845200][00000190FAEF4A40 49] Android_PowerVR_GM9xxx, [00000190FA893900][00000190FAEF8D00 49] Android_PowerVR_GM9xxx_Vulkan, [00000190FA846D00][00000190FAEFCFC0 49] Android_TegraK1, [00000190FA891700][00000190FAF01280 49] Android_Unknown_Vulkan, [00000190FA845700][00000190FAEDD500 49] Lumin, [00000190FA893500][00000190FAF05780 49] Lumin_Desktop, [00000190FA845300][00000190FAF0DA40 49] HoloLens, 
+[2021.06.03-01.36.04:650][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.06.03-01.36.04:651][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.06.03-01.36.04:652][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.06.03-01.36.04:652][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.06.03-01.36.04:653][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.06.03-01.36.04:682][  0]LogNetVersion: GunPong 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 282116192)
+[2021.06.03-01.36.04:932][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2021.06.03-01.36.07:132][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.06.03-01.36.07:141][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.06.03-01.36.07:369][  0]SourceControl: Source control is disabled
+[2021.06.03-01.36.07:370][  0]SourceControl: Source control is disabled
+[2021.06.03-01.36.07:380][  0]SourceControl: Source control is disabled
+[2021.06.03-01.36.07:394][  0]LogUProjectInfo: Found projects:
+[2021.06.03-01.36.07:726][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.06.03-01.36.07:769][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.03-01.36.07:769][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.03-01.36.07:983][  0]LogOcInput: OculusInput pre-init called
+[2021.06.03-01.36.08:000][  0]LogUObjectArray: 20512 objects as part of root set at end of initial load.
+[2021.06.03-01.36.08:000][  0]LogUObjectAllocator: 5479744 out of 0 bytes used by permanent object pool.
+[2021.06.03-01.36.08:001][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.06.03-01.36.08:104][  0]LogEngine: Initializing Engine...
+[2021.06.03-01.36.08:109][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.06.03-01.36.08:150][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.06.03-01.36.08:150][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.06.03-01.36.08:157][  0]LogInit: Texture streaming: Disabled
+[2021.06.03-01.36.08:252][  0]LogInit: Display: Game Engine Initialized.
+[2021.06.03-01.36.08:254][  0]LogNiagaraEditor: GEditor isn't valid! Particle reset commands will not work for Niagara components!
+[2021.06.03-01.36.08:407][  0]LogInit: Display: Starting Game.
+[2021.06.03-01.36.08:407][  0]LogNet: Browse: /Game/TwinStickCPP/Maps/TwinStickExampleMap?Name=Player
+[2021.06.03-01.36.08:408][  0]LogLoad: LoadMap: /Game/TwinStickCPP/Maps/TwinStickExampleMap?Name=Player
+[2021.06.03-01.36.08:409][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2021.06.03-01.36.08:415][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.03-01.36.08:433][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2021.06.03-01.36.08:637][  0]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2021.06.03-01.36.08:638][  0]LogLoad: Game class is 'GunPongGameMode'
+[2021.06.03-01.36.08:639][  0]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.06.03-01.36.08:639][  0]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.06.03-01.36.08:640][  0]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.06.03-01.36.08:640][  0]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2021.06.03-01.36.08:641][  0]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.06.03-01.36.08:641][  0]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 17777
+[2021.06.03-01.36.08:643][  0]PIE: Warning: Invalid Simulate Options: Body (Ball_3.Sphere) is set to simulate physics but Collision Enabled is incompatible
+[2021.06.03-01.36.08:643][  0]PIE: Warning: Invalid Simulate Options: Body (Ball_3.Sphere) is set to simulate physics but Collision Enabled is incompatible
+[2021.06.03-01.36.08:647][  0]PIE: Warning: Invalid Simulate Options: Body (Ball_3.Sphere) is set to simulate physics but Collision Enabled is incompatible
+[2021.06.03-01.36.08:648][  0]PIE: Warning: Invalid Simulate Options: Body (Ball_3.Sphere) is set to simulate physics but Collision Enabled is incompatible
+[2021.06.03-01.36.08:649][  0]LogWorld: Bringing World /Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap up for play (max tick rate 30) at 2021.06.02-21.36.08
+[2021.06.03-01.36.08:651][  0]LogWorld: Bringing up level for play took: 0.008727
+[2021.06.03-01.36.08:651][  0]LogLoad: Took 0.242973 seconds to LoadMap(/Game/TwinStickCPP/Maps/TwinStickExampleMap)
+[2021.06.03-01.36.08:678][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2021.06.03-01.36.08:679][  0]LogLoad: (Engine Initialization) Total time: 9.45 seconds
+[2021.06.03-01.36.08:680][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.06.03-01.36.08:680][  0]LogInit: First time updating LLM stats...

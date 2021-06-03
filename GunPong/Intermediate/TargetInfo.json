@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "GunPong",
-			"Path": "C:\\Users\\Jerry\\Documents\\GitHub\\networking-practice\\GunPong\\Source\\GunPong.Target.cs",
+			"Path": "C:\\Users\\biosa\\Documents\\GitHub\\networking-practice\\GunPong\\Source\\GunPong.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "GunPongEditor",
-			"Path": "C:\\Users\\Jerry\\Documents\\GitHub\\networking-practice\\GunPong\\Source\\GunPongEditor.Target.cs",
+			"Path": "C:\\Users\\biosa\\Documents\\GitHub\\networking-practice\\GunPong\\Source\\GunPongEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
