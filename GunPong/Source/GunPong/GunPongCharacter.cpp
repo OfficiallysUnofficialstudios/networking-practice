@@ -127,6 +127,7 @@ void AGunPongCharacter::StopFire()
 
 void AGunPongCharacter::SpawnProjectile_Implementation(FRotator ClickDirection)
 {
+	OnSpawnProjectile();
 	FVector spawnLocation = GetActorLocation() + (ClickDirection.Vector() * 100.0f);
 	FRotator spawnRotation = ClickDirection;
 
