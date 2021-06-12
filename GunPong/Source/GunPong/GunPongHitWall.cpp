@@ -2,7 +2,7 @@
 
 
 #include "GunPongHitWall.h"
-#include <GunPong/GunPongPawn.h>
+#include "Ball.h"
 
 // Sets default values
 AGunPongHitWall::AGunPongHitWall()
@@ -40,7 +40,7 @@ void AGunPongHitWall::UpdateHits(AActor* CollidedActor) {
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Orange, TEXT("isvalid"));
 
 
-		if (CollidedActor->IsA<AGunPongPawn>()) {
+		if (CollidedActor->IsA<ABall>()) {
 			NumHits += 1;
 
 			FString hitMessage = FString::Printf(TEXT("Hits: %i"), NumHits);
